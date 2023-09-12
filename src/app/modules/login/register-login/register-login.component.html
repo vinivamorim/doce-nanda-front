@@ -1,0 +1,42 @@
+<div class="body">
+    <app-header></app-header>
+    <div class="containerLogin">
+        <div class="cardLogin">
+            <img [src]="'assets/images/icon_login_large.png'" />
+
+            <form class="containerForm" #form="ngForm" (ngSubmit)="onSubmit(form)">
+
+                <div class="formHelp">
+                    <label for="fullName">Nome completo <a style="color: red">*</a></label>
+                    <input type="text" placeholder="Nome e sobrenome" id="fullName" name="fullName" [(ngModel)]="user.fullName"
+                        required #fullName="ngModel"/>
+                    <div *ngIf="!fullName.valid && fullName.touched">
+                        Campo inválido!
+                    </div>
+                </div>
+
+                <div class="formHelp">
+                    <label for="email">Endereço de email <a style="color: red">*</a></label>
+                    <input type="email" placeholder="meuemail@...com" id="email" name="email" [(ngModel)]="user.email"
+                        required email #email="ngModel"/>
+                    <div *ngIf="!email.valid && email.touched">
+                        Campo inválido!
+                    </div>
+                </div>
+
+                <div class="formHelp">
+                    <label for="password">Senha <a style="color: red">*</a></label>
+                    <input type="password" placeholder="Digite sua senha" id="password" name="password"
+                        [(ngModel)]="user.password" required #password="ngModel" />
+                    <div *ngIf="!password.valid && password.touched">
+                        Campo inválido!
+                    </div>
+                </div>
+
+                <button type="submit" [disabled]="!form.valid">Criar conta</button>
+            </form>
+
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

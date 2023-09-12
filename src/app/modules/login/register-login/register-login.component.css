@@ -1,0 +1,91 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ng-invalid.ng-touched:not(.containerForm){
+    border: 1px solid red;
+}
+
+.containerLogin{
+    width: 100%; 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: #FEE7DF;
+    align-items: center;
+}   
+
+.cardLogin{
+    width: 30%; 
+    max-width: 350px;
+    min-width: 250px;   
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF6F1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardLogin img{ 
+    width: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.containerForm{
+    width: 100%;
+}
+    
+.containerForm button{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.containerForm input{
+    width: 60%; 
+    max-width: 200px;
+    min-width: 70px;
+    margin-top: 3px;
+    border-color:beige;
+}
+
+.formHelp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.createAccount{
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.createAccount p{
+    margin: 0 0;
+}
+
+.createAccount a{
+    color: blue;
+}

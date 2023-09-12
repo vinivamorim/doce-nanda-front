@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Script MT;
+    src: url(font/ScriptMTBold.ttf);
+}
+
+
+
+.container{
+    width: 100%;
+    height: 80px;
+    background-color: #FFF6F1;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.containerLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerLeftText{
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerLeftText p{
+    margin: 0 0;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.containerRight{    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.imgMaps{
+    margin-left: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imgMaps img{
+    height: 60%
+}
+
+.containerRightImg{
+    height: 100%;   
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
+
+.containerRightImg img{ 
+    height: 35%;
+    width: auto;
+}
+
+.containerRightText{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    /* padding-left: 20px; */
+    padding-right: 40px;
+}
+
+.containerRightText a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
